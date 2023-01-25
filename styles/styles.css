@@ -1,0 +1,309 @@
+@font-face {
+  font-family:"Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+.main-header{
+  background-color: #FEAFC3;;
+  color: #2D3440;
+}
+.main-header button{
+  border: 2px solid transparent;
+  background-color: #FEAFC3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+}
+.main-header a{
+  text-decoration: none;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 22px;
+}
+.user-tel-link{
+  font-weight: 700;
+}
+.slider-title{
+ font-weight: 900;
+ font-size: 36px;
+ line-height: 46px;
+}
+.slider-description{
+  font-size: 18px;
+  line-height: 24px;
+}
+.slider-img{
+  opacity: 40%;
+}
+.index-gifts-title{
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+.gift-item{
+  width: 570px;
+  height: 268px;
+  background-color: #FF7799;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding-left: 36px;
+  padding-top: 36px;
+}
+.gift-raspberry{
+  background-image: url("../images/raspberry.png");
+  background-repeat: no-repeat;
+background-position-x: right;
+}
+.gift-marshmellow{
+  background-image: url("../images/marshmellow.png");
+  background-repeat: no-repeat;
+background-position-x: right;
+}
+.gift-subtitle{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.popular-products-intro{
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+.popular-products-item{
+  background-color: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  border-radius: 8px;
+  padding: 133px 40px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.popular-products-item img{
+  position: absolute;
+  top: -51px;
+  right: 20%;
+}
+.popular-products-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+.popular-products-price{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+.advantages{
+  width: 1170px;
+  min-height: 480px;
+  border: 24px solid transparent;
+  border-image: url("../images/border-waffle.png");
+  border-image-slice: 25 ;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 56px 40px;
+  box-sizing: border-box;
+  border-image-repeat: round;
+}
+.advantages-title{
+  font-size: 32px;
+  font-weight: 900px;
+  line-height: 46px;
+  text-align: center;
+}
+.new-in-blog-mailing{
+  display: block;
+  color: #2D3440;
+  text-decoration: none;
+  width: 570px;
+  min-height: 224px;
+  background-image: url("../images/background-ice-cream.png");
+  background-repeat: no-repeat;
+  background-position-y: -109px;
+  background-size:113%;
+  padding: 32px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.new-in-blog-mailing p{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+.new-in-blog-mailing h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+}
+.mailing-conteiner{
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 26px;
+  width: 558px;
+  min-height: 212px;
+ border: 6px solid transparent;
+ border-radius: 16px;
+ border-image: url("../images/border-lines.png");
+ border-image-slice: 16;
+}
+.delivery-conteiner{
+  width: 1170px;
+  min-height: 534px;
+  background-image: url("../images/background-ice-cream2.png");
+  background-repeat: no-repeat;
+background-position: center;
+box-sizing: border-box;
+padding: 64px 64px 64px 100px;
+background-size: 100%;
+border-radius: 16px;
+}
+.delivery-title{
+  font-size: 32px;
+  font-weight: 900px;
+  line-height: 46px;
+}
+.delivery-form-subtitle{
+  font-weight: 700;
+}
+.delivery{
+  width: 500px;
+  height: 406px;
+  background-color: #FCFCFC;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 16px;
+}
+.contacts-conteiner{
+  width: 1170px;
+  min-height: 492px;
+  background-image: url("../images/background-address.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 64px;
+  border-radius: 16px;
+}
+.contacts{
+  width: 343px;
+  height: 364px;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+.contacts-address{
+  margin: 0;
+  margin-bottom: 12px;
+}
+address{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 24px;
+}
+.contacts-phone{
+  margin: 0;
+  margin-bottom: 12px;
+}
+.contacts-tel{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+.contacts-phone-description{
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.breadcrumbs-link{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.catalog-item{
+  background-color: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  border-radius: 8px;
+  padding: 133px 40px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.catalog-item img{
+  position: absolute;
+  top: -51px;
+  right: 20%;
+}
+.catalog-title{
+  font-size: 32px;
+  font-weight: 900px;
+  line-height: 46px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.catalog-description{
+  margin: 0;
+  margin-bottom: 16px;
+}
+.catalog-filter-group{
+  font-size: 14px;
+  line-height: 20px;
+}
+.fat-item label{
+  font-size: 14px;
+  line-height: 20px;
+}
+.filler-item label{
+  font-size: 14px;
+  line-height: 20px;
+}
+.catalog-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.catalog-price{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
