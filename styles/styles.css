@@ -32,6 +32,8 @@ body{
  flex-direction: column;
  min-height: 100%;
  align-items: center;
+ width: 1300px;
+ margin: 0 auto;
 }
 .visually-hidden{
   position: absolute;
@@ -68,6 +70,7 @@ body{
   display: flex;
   justify-content: space-between;
   width: 1000px;
+
 }
 .navigation-list{
   padding: 0;
@@ -75,11 +78,14 @@ body{
   list-style-type: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  width: 545px;
 }
 .navigation-link{
   padding: 8px 16px;
   border-radius: 30px;
   border: 2px solid transparent;
+  outline: none;
 }
 .navigation-link:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -105,6 +111,7 @@ body{
   align-items: center;
   border-radius: 30px ;
   cursor: pointer;
+  outline: none;
 }
 .drop-down-window svg{
   margin-left: 6px;
@@ -145,6 +152,7 @@ body{
   display: flex;
   align-items: center;
   cursor: pointer;
+  outline: none;
 }
 .user-popup:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -177,6 +185,7 @@ body{
 .user-tel-link{
   font-weight: 700;
   border: 2px solid transparent;
+  outline: none;
 }
 .user-tel-link:hover{
   opacity: 60%;
@@ -234,7 +243,10 @@ display: none;
   top: 0;
   left: 0;
 }
-
+.slider-about-product{
+  width: 430px;
+  min-height: 270px;
+}
 .slider-title{
  font-weight: 900;
  font-size: 36px;
@@ -256,7 +268,8 @@ display: none;
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
   text-decoration: none;
   cursor: pointer;
-
+  outline: none;
+  display: inline-block;
 }
 .button:hover{
   background-color: rgba(252, 252, 252, 0.4);
@@ -289,6 +302,20 @@ display: none;
 .circle-bg-mini{
   position: relative;
   opacity: 40%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+.circle-bg-mini:hover{
+  opacity: 70%;
+}
+.circle-bg-mini:active{
+  opacity: 20%;
+}
+.circle-bg-mini:focus{
+  opacity: 100%;
 }
 .circle-bg-mini::before{
   content: " ";
@@ -308,6 +335,7 @@ display: none;
   position: absolute;
   top: 237px;
   left: 497px;
+  outline: none;
 }
 .slider-controls-button{
   width: 38px;
@@ -351,6 +379,7 @@ display: none;
   padding: 0;
   margin-right: 8px;
   cursor: pointer;
+  outline: none;
 }
 .indicator-button:hover{
   border: 1px solid #FCFCFC;
@@ -384,6 +413,7 @@ display: none;
   background-color: transparent;
   border-radius: 24px;
   margin-right: 16px;
+  outline: none;
 }
 .button-social:hover{
   background-color: #2D3440 ;
@@ -432,7 +462,7 @@ display: none;
 }
 .gift-item{
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   background-color: #FF7799;
   border-radius: 16px;
   box-sizing: border-box;
@@ -443,11 +473,13 @@ display: none;
   background-image: url("../images/raspberry.png");
   background-repeat: no-repeat;
 background-position-x: right;
+background-position-y: bottom;
 }
 .gift-marshmellow{
   background-image: url("../images/marshmellow.png");
   background-repeat: no-repeat;
 background-position-x: right;
+background-position-y: bottom;
 }
 .gift-subtitle{
   font-weight: 700;
@@ -481,7 +513,6 @@ background-position-x: right;
   flex-wrap: wrap;
 }
 .popular-products-item{
-  width: 270px;
   text-align: center;
   margin-right: 30px;
 }
@@ -495,14 +526,29 @@ background-position-x: right;
 }
 .popular-products-item img{
  margin-bottom: -122px;
-
+ box-shadow: 0 8px 16px rgba(45, 52, 64, 0.32);
+ border-radius: 50%;
+}
+.img-link:hover img{
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.7);
+}
+.img-link:active img{
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.7);
+  opacity: 70%;
+}
+.img-link:focus{
+  appearance: none;
+  outline: none;
+}
+.img-link:focus img{
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 1);
 }
 .popular-products-content{
 background-color: #FCFCFC;
 padding: 133px 40px 24px;
   box-sizing: border-box;
   width: 270px;
-  height: 281px;
+  min-height: 281px;
   border-radius: 8px;
 }
 .popular-products-title{
@@ -579,7 +625,7 @@ padding: 133px 40px 24px;
 }
 .advantages-title{
   font-size: 32px;
-  font-weight: 900px;
+  font-weight: 900;
   line-height: 46px;
   text-align: center;
   margin: 0;
@@ -627,8 +673,7 @@ padding: 133px 40px 24px;
   min-height: 224px;
   background-image: url("../images/background-ice-cream.png");
   background-repeat: no-repeat;
-  background-position-y: -109px;
-  background-size:113%;
+  background-size:cover;
   padding: 32px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -700,7 +745,7 @@ padding: 133px 40px 24px;
   border-radius: 26px;
   border: 2px solid transparent;
   box-sizing: border-box;
-
+  text-decoration: none;
   height: 44px;
 }
 .red-button:hover{
@@ -722,9 +767,9 @@ padding: 133px 40px 24px;
   background-image: url("../images/background-ice-cream2.png");
   background-repeat: no-repeat;
 background-position: center;
+background-size: cover;
 box-sizing: border-box;
 padding: 64px 64px 64px 100px;
-background-size: 100%;
 border-radius: 16px;
 display: flex;
 justify-content: space-between;
@@ -790,7 +835,7 @@ margin-bottom: 80px;
   min-height: 492px;
   background-image: url("../images/background-address.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   box-sizing: border-box;
   padding: 64px;
@@ -798,7 +843,7 @@ margin-bottom: 80px;
 }
 .contacts{
   width: 343px;
-  height: 364px;
+  min-height: 364px;
   box-sizing: border-box;
   padding: 40px;
   background-color: #FCFCFC;
@@ -842,6 +887,7 @@ address{
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 .breadcrumbs-item{
   margin-right: 28px;
@@ -880,11 +926,13 @@ address{
 }
 .catalog-item img{
   margin-bottom: -122px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.32);
 }
 .catalog-content{
   background-color: #FCFCFC;
   width: 270px;
-  height: 281px;
+  min-height: 281px;
   border-radius: 8px;
   padding: 133px 40px 24px;
   box-sizing: border-box;
@@ -927,6 +975,7 @@ address{
   background-position-y: center;
   background-position-x: 167px;
   cursor: pointer;
+  outline: none;
 }
 .catalog-sorting-select:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -968,6 +1017,7 @@ address{
  background-color: #FCFCFC;
  cursor: pointer;
  padding: 0;
+ outline: none;
 }
 .range-toggle:hover{
   border: 6px solid #FCFCFC;
@@ -1068,13 +1118,37 @@ address{
   box-sizing: border-box;
   padding: 8px 24px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .filler-item{
   display: flex;
+  align-items: center;
 }
-.filler-item input{
-  margin: 0;
+.filler-input{
+  display: none;
+}
+.filler-label-mask{
+  width: 16px;
+  height: 16px;
+  mask-image: url("../images/filler-check.svg");
+  -webkit-mask-image: url("../images/filler-check.svg");
+  background-color: #2D3440;
   margin-right: 8px;
+}
+.filler-item:hover .filler-label-mask{
+  mask-image: url("../images/filler-check.svg");
+  -webkit-mask-image: url("../images/filler-check.svg");
+  background-color: #FCFCFC;
+}
+.filler-input:checked ~ .filler-label-mask{
+  mask-image: url("../images/filler-checked.svg");
+  -webkit-mask-image: url("../images/filler-checked.svg");
+  background-color: #2D3440;
+}
+.filler-input:checked:hover ~ .filler-label-mask{
+  mask-image: url("../images/filler-checked.svg");
+  -webkit-mask-image: url("../images/filler-checked.svg");
+  background-color: #FCFCFC;
 }
 .filter-button{
   font-size: 16px;
@@ -1160,7 +1234,7 @@ address{
 }
 .catalog-bottom{
   display: grid;
-  grid-template-columns: 180px 180px 178px;
+  grid-template-columns: 300px 180px 300px;
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -1217,6 +1291,7 @@ address{
 .catalog-pagination{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .catalog-pagination-list{
   margin: 0;
@@ -1252,7 +1327,7 @@ align-items: center;
 }
 .main-footer{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto 424px auto;
   justify-content: space-between;
   width: 1170px;
   padding: 48px 0 48px;
@@ -1276,6 +1351,7 @@ align-items: center;
 .footer-info-item{
   margin-right: 24px;
   margin-bottom: 8px;
+  padding-left: 24px;
 }
 .footer-info-item:first-child a{
   font-weight: 700;
