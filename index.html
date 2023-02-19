@@ -68,7 +68,7 @@
       <h3 class="popup-title">Личный кабинет</h3>
       <form class="popup-log-in-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="input-style" type="email"  placeholder="email@example.com" required>
-        <input class="input-style password-input" type="password"   required>
+        <input class="input-style password-input" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"  required>
         <button class="popup-log-in-submit red-button" type="submit">Войти</button>
         <div class="popup-log-in-helper">
           <a class="password-helper" href="#">Забыли пароль?</a>
@@ -86,6 +86,7 @@
       <h3 class="popup-title">Корзина</h3>
       <ul class="popup-cart-list">
         <li class="popup-cart-item">
+          <a class="popup-cart-link" href="#">
           <img src="images/ic-raspberry.png" width="46" height="46" alt="Малинка" >
           <div class="popup-cart-about-product">
           <h4 class="popup-cart-subtitle">Малинка</h4>
@@ -95,8 +96,10 @@
           <button class="popup-cart-closer">
             <span class="visually-hidden">Закрыть</span>
           </button>
+          </a>
         </li>
         <li class="popup-cart-item">
+          <a class="popup-cart-link" href="#">
           <img src="images/ic-bubble-gum.png" width="46" height="46" alt="Бабл-гам" >
           <div class="popup-cart-about-product">
           <h4 class="popup-cart-subtitle">Бабл-гам</h4>
@@ -106,6 +109,7 @@
           <button class="popup-cart-closer">
             <span class="visually-hidden">Закрыть</span>
           </button>
+        </a>
         </li>
       </ul>
       <div class="popup-cart-bottom">
@@ -134,7 +138,7 @@
       <span class="circle-bg">
         <img class="slider-img-active" src="images/slider-ic-strawberry.png" width="312" height="507" alt="Пломбир с клубничным джемом">
       </span>
-      <button class="circle-bg-mini">
+      <button class="circle-bg-mini circle-bg-mini-1">
       <img class="slider-img" src="images/slider-ic-banana.png" width="100" height="150" alt="Сливочное мороженое со вкусом банана">
       </button>
       <button class="circle-bg-mini">
@@ -150,7 +154,7 @@
       <span class="circle-bg">
       <img class="slider-img-active" src="images/slider-ic-banana.png" width="312" height="507" alt="Сливочное мороженое со вкусом банана">
       </span>
-      <button class="circle-bg-mini">
+      <button class="circle-bg-mini circle-bg-mini-1">
       <img class="slider-img" src="images/slider-ic-marshmellow.png" width="100" height="150" alt="Карамельный пломбир с маршмеллоу">
       </button>
       <button class="circle-bg-mini">
@@ -166,7 +170,7 @@
       <span class="circle-bg">
       <img class="slider-img-active" src="images/slider-ic-marshmellow.png" width="312" height="507" alt="Карамельный пломбир с маршмеллоу">
       </span>
-      <button class="circle-bg-mini">
+      <button class="circle-bg-mini circle-bg-mini-1">
       <img class="slider-img" src="images/slider-ic-strawberry.png" width="100" height="150" alt="Пломбир с клубничным джемом">
       </button>
       <button class="circle-bg-mini">
@@ -316,7 +320,7 @@
   <p>10 способов сервировки<br>фруктовых щербетов<br>к столу</p>
 </a>
  <div class="mailing-conteiner">
-  <p class="mailing-subtitle">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+  <p class="mailing-subtitle">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
   <form class="mailing-form" action=" https://echo.htmlacademy.ru/" method="post">
   <input type="email" class="mailing-input input-style" placeholder="email@example.com">
   <button class="mailing-button red-button" type="submit">Отправить</button>
@@ -334,6 +338,9 @@
       <div class="delivery-form-date field-group">
         <label class="delivery-form-subtitle" for="date-delivery" >
           Дата
+          <span class="tooltip-date" tabindex="0" aria-describedby="tooltip-date"></span>
+          <span class="tooltip-decor-date"></span>
+          <p class="tooltip-text-date" role="toolti-date">Введите дату, удобную для получения заказа</p>
         </label>
       <input type="text" class="delivery-form-date-field input-style" id="date-delivery" placeholder="01.04.2020">
       </div>
@@ -344,9 +351,9 @@
       <div class="delivery-form-address field-group">
         <label class="delivery-form-subtitle" for="address-delivery">
           Адрес
-          <span class="tooltip"></span>
+          <span class="tooltip" aria-describedby="tooltip" tabindex="0"></span>
           <span class="tooltip-decor"></span>
-          <p class="tooltip-text">Введите название<br>улицы, дома и квартиры</p>
+          <p class="tooltip-text" role="tooltip">Введите название<br>улицы, дома и квартиры</p>
         </label>
       <input type="text" class="delivery-form-address-field input-style" id="address-delivery" placeholder="ул. Большая Конюшенная, 19/8">
       </div>
@@ -388,10 +395,10 @@
       <a href="#" class="footer-info-link">Для поставщиков</a>
     </li>
     <li class="footer-info-item">
-      <a href="#" class="footer-info-link">О производстве</a>
+      <a href="#" class="footer-info-link">Наши документы</a>
     </li>
     <li class="footer-info-item">
-      <a href="#" class="footer-info-link">Наши документы</a>
+      <a href="#" class="footer-info-link">О производстве</a>
     </li>
     <li class="footer-info-item">
       <a href="#" class="footer-info-link">Экологические стандарты</a>
@@ -401,7 +408,7 @@
    <a href="https://htmlacademy.ru/" class="logo-html-link">
     <span class="visually-hidden">Логотип HTML-Academy</span>
   </a>
-    <span>Сделано в .html academy © 2021</span>
+    <span class="footer-html-academy-span">Сделано в .html academy © 2021</span>
   </p>
 </footer>
 <section class="modal-conteiner">

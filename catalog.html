@@ -68,7 +68,7 @@
       <h3 class="popup-title">Личный кабинет</h3>
       <form class="popup-log-in-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="input-style" type="email"  placeholder="email@example.com" required>
-        <input class="input-style password-input" type="password"   required>
+        <input class="input-style password-input" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"   required>
         <button class="popup-log-in-submit red-button" type="submit">Войти</button>
         <div class="popup-log-in-helper">
           <a class="password-helper" href="#">Забыли пароль?</a>
@@ -86,6 +86,7 @@
       <h3 class="popup-title">Корзина</h3>
       <ul class="popup-cart-list">
         <li class="popup-cart-item">
+          <a class="popup-cart-link" href="#">
           <img src="images/ic-raspberry.png" width="46" height="46" alt="Малинка" >
           <div class="popup-cart-about-product">
           <h4 class="popup-cart-subtitle">Малинка</h4>
@@ -95,8 +96,10 @@
           <button class="popup-cart-closer">
             <span class="visually-hidden">Закрыть</span>
           </button>
+          </a>
         </li>
         <li class="popup-cart-item">
+          <a class="popup-cart-link" href="#">
           <img src="images/ic-bubble-gum.png" width="46" height="46" alt="Бабл-гам" >
           <div class="popup-cart-about-product">
           <h4 class="popup-cart-subtitle">Бабл-гам</h4>
@@ -106,6 +109,7 @@
           <button class="popup-cart-closer">
             <span class="visually-hidden">Закрыть</span>
           </button>
+        </a>
         </li>
       </ul>
       <div class="popup-cart-bottom">
@@ -140,9 +144,9 @@
       <fieldset class="catalog-filter-group select-group">
         <legend class="catalog-filter-subtitle">Сортировка:</legend>
         <select class="catalog-sorting-select">
-          <option class="catalog-sorting-select-item">По популярности</option>
-          <option class="catalog-sorting-select-item">Цена по возрастанию</option>
-          <option class="catalog-sorting-select-item">Цена по убыванию</option>
+          <option class="catalog-sorting-select-item">по популярности</option>
+          <option class="catalog-sorting-select-item">цена по возрастанию</option>
+          <option class="catalog-sorting-select-item">цена по убыванию</option>
         </select>
       </fieldset>
     <fieldset class="catalog-filter-group range-group">
@@ -186,28 +190,33 @@
       <ul class="filler-list">
         <li class="filler-item">
           <input class="filler-input" type="checkbox" id="chocolate" name="chocolate" checked>
-          <span class="filler-span-mask" for="chocolate"></span>
-          <label for="chocolate">шоколадные</label>
+          <label for="chocolate">
+            шоколадные
+          </label>
         </li>
         <li class="filler-item">
           <input class="filler-input"  type="checkbox" id="sugar" name="sugar" checked>
-          <span class="filler-span-mask" for="sugar"></span>
-          <label for="sugar">сахарные посыпки</label>
+          <label for="sugar">
+            сахарные посыпки
+          </label>
         </li>
         <li class="filler-item">
           <input class="filler-input"  type="checkbox" id="fruits" name="fruits">
-          <span class="filler-span-mask" for="fruits"></span>
-          <label for="fruits">фрукты</label>
+          <label for="fruits">
+            фрукты
+          </label>
         </li>
         <li class="filler-item">
           <input class="filler-input"  type="checkbox" id="syrups" name="syrups">
-          <span class="filler-span-mask" for="syrups"></span>
-          <label for="syrups">сиропы</label>
+          <label for="syrups">
+            сиропы
+          </label>
         </li>
         <li class="filler-item">
           <input class="filler-input" type="checkbox" id="jams" name="jams">
-          <span class="filler-span-mask" for="jams"></span>
-          <label for="jams">джемы</label>
+          <label for="jams">
+            джемы
+          </label>
         </li>
       </ul>
     </fieldset>
