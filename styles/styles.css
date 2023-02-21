@@ -1227,6 +1227,8 @@ margin-bottom: 80px;
   display: inline-block;
   position: relative;
   margin-left: 2px;
+  background-color: transparent;
+  border: none;
 
 }
 .tooltip:hover ~ .tooltip-text{
@@ -1271,7 +1273,7 @@ margin-bottom: 80px;
   font-weight: 400;
   display: none;
   top: -17px;
-  left: 65px;
+  left: 68px;
    min-width: 130px;
 }
 .tooltip-decor{
@@ -1285,7 +1287,7 @@ margin-bottom: 80px;
  border-top: 1px solid #B9B9B9;
  background-color: #FCFCFC;
  transform: rotateZ(227deg);
- top: 5px;
+ top: 8px;
  left: 76px;
  z-index: 2;
  display: none;
@@ -1301,8 +1303,8 @@ margin-bottom: 80px;
  border-top: 1px solid #B9B9B9;
  background-color: #FCFCFC;
  transform: rotateZ(227deg);
- top: 5px;
- left: 61px;
+ top: 9px;
+ left: 64px;
  z-index: 2;
  display: none;
 }
@@ -1425,7 +1427,7 @@ address{
 .catalog-item{
   width: 270px;
   text-align: center;
-  margin-bottom: 40px;
+
   margin-right: 30px;
 }
 .catalog-item:nth-child(4n){
@@ -1446,6 +1448,15 @@ address{
 }
 .catalog-main{
   width: 1170px;
+  position: relative;
+}
+.catalog-main::after{
+  content: " ";
+  position: absolute;
+  width: 1170px;
+  height: 1px;
+  background-color:rgba(252, 252, 252, 0.3)
+  ;
 }
 .catalog-filter-products{
   margin-bottom: 44px;
@@ -1460,13 +1471,15 @@ address{
   border: none;
   font-size: 14px;
   line-height: 20px;
+  padding: 0;
 }
 .catalog-filter-subtitle{
-  margin-bottom: 3px;
+  margin-bottom: 8px;
   margin-left: 13px;
 }
 .select-group{
   min-width: 196px;
+  margin-right: 22px;
 }
 .catalog-sorting-select{
   width: 196px;
@@ -1474,7 +1487,7 @@ address{
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid transparent;
-  padding: 6px 16px;
+  padding: 6px 13px;
   color: #2D3440;
   font-family: "Inter";
   font-size: 14px;
@@ -1495,6 +1508,8 @@ address{
 }
 .range-group{
   min-width: 196px;
+  margin-right: 21px;
+  margin-bottom: 17px;
 }
 .range-background{
   width: 196px;
@@ -1515,8 +1530,8 @@ address{
   position: absolute;
   height: 2px;
   background-color: #565C66;
-  width: 56px;
-  left: 40px;
+  width: 76px;
+  left: 29px;
 }
 .range-toggle{
  position: absolute;
@@ -1571,25 +1586,32 @@ address{
 .fat-item:last-child{
   margin-right: 0;
 }
-.fat-item input{
+.fat-label{
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 24px;
+}
+.fat-label::before{
+  content: " ";
+  position: absolute;
   margin: 0;
   margin-right: 8px;
-  position: relative;
-  display: block;
   width: 16px;
   height: 16px;
   border: 1px solid black;
   border-radius: 50%;
   box-sizing: border-box;
-  appearance: none;
+  left: 0;
+  top: 2px;
 }
-.fat-item input:hover{
-  border: 1px solid #FCFCFC;
+.fat-item input:hover ~ .fat-label::before{
+  border-color:#FCFCFC;
 }
-.fat-item input:focus{
-  border: 1px solid #FCFCFC;
+.fat-item input:hover ~ .fat-label::before{
+  border-color:  #FCFCFC;
 }
-.fat-item input:checked{
+.fat-item input:checked ~ .fat-label::before{
   mask-image: url("../images/radio-checked.svg");
   -webkit-mask-image: url("../images/radio-checked.svg");
   mask-repeat: no-repeat;
@@ -1598,14 +1620,17 @@ address{
   -webkit-mask-position: center;
   background-color: #2D3440;
 }
-.fat-item input:checked:hover{
+.fat-item input:checked:hover ~ .fat-label::before{
   background-color: #FCFCFC;
+  border: none;
 }
-.fat-item input:checked:focus{
+.fat-item input:checked:focus ~ .fat-label::before{
   background-color: #FCFCFC;
+  border: none;
 }
 .filler-group{
  min-width: 604px;
+ margin-right: 14px;
 }
 .filler-list{
   margin: 0;
@@ -1614,19 +1639,29 @@ address{
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   box-sizing: border-box;
-  padding: 8px 24px;
-  justify-content: center;
+  padding: 8px 21px;
+
   flex-wrap: wrap;
 }
 .filler-item{
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 17px;
 }
 .filler-item:last-child{
   margin-right: 0;
 }
-.filler-input{
+.filler-label{
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 24px;
+}
+.filler-label::before{
+  content: " ";
+  position: absolute;
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -1634,38 +1669,37 @@ address{
   -webkit-mask-image: url("../images/filler-check.svg");
   background-color: #2D3440;
   margin-right: 8px;
-  appearance: none;
+  left: 0;
 }
-.filler-input:hover{
-  mask-image: url("../images/filler-check.svg");
-  -webkit-mask-image: url("../images/filler-check.svg");
+
+.filler-input:hover ~ .filler-label::before{
   background-color: #FCFCFC;
 }
-.filler-input:focus{
+.filler-input:focus ~ .filler-label::before{
   background-color: #FCFCFC;
 }
-.filler-input:checked{
+.filler-input:checked ~ .filler-label::before{
   mask-image: url("../images/filler-checked.svg");
   -webkit-mask-image: url("../images/filler-checked.svg");
   background-color: #2D3440;
 }
-.filler-input:checked:hover{
+.filler-input:checked:hover ~ .filler-label::before{
   mask-image: url("../images/filler-checked.svg");
   -webkit-mask-image: url("../images/filler-checked.svg");
   background-color: #FCFCFC;
 }
-.filler-input:checked:focus{
+.filler-input:checked:focus ~ .filler-label::before{
   mask-image: url("../images/filler-checked.svg");
   -webkit-mask-image: url("../images/filler-checked.svg");
   background-color: #FCFCFC;
 }
 .filter-button{
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Inter";
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;
-  padding: 4px 52px;
+  padding: 4px 54px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
   border: 2px solid #FCFCFC;
@@ -1695,6 +1729,7 @@ address{
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 40px 30px;
+  margin-bottom: 59px;
 }
 .catalog-main-title{
   font-size: 32px;
@@ -1706,16 +1741,6 @@ address{
 .catalog-description{
   margin: 0;
   margin-bottom: 16px;
-}
-.fat-item label{
-  font-size: 14px;
-  line-height: 20px;
-}
-.filler-item label{
-  font-size: 14px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
 }
 .catalog-title{
   font-size: 20px;
@@ -1737,9 +1762,9 @@ address{
 }
 .catalog-bottom{
   display: grid;
-  grid-template-columns: 300px 180px 300px;
+  grid-template-columns: 289px 180px 300px;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 81px;
 }
 .catalog-download-more{
   grid-column: 2/3;

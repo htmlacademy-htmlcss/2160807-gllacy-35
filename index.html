@@ -67,8 +67,8 @@
     <div class="popup-log-in">
       <h3 class="popup-title">Личный кабинет</h3>
       <form class="popup-log-in-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="input-style" type="email"  placeholder="email@example.com" required>
-        <input class="input-style password-input" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"  required>
+        <input class="input-style" type="email"  placeholder="Введите e-mail" value="email@example.com" required>
+        <input class="input-style password-input" type="password" placeholder="Введите пароль" value="password" required>
         <button class="popup-log-in-submit red-button" type="submit">Войти</button>
         <div class="popup-log-in-helper">
           <a class="password-helper" href="#">Забыли пароль?</a>
@@ -338,9 +338,9 @@
       <div class="delivery-form-date field-group">
         <label class="delivery-form-subtitle" for="date-delivery" >
           Дата
-          <span class="tooltip-date" tabindex="0" aria-describedby="tooltip-date"></span>
+          <button class="tooltip-date" aria-describedby="tooltip-date"></button>
           <span class="tooltip-decor-date"></span>
-          <p class="tooltip-text-date" role="toolti-date">Введите дату, удобную для получения заказа</p>
+          <p class="tooltip-text-date" role="tooltip-date" id="tooltip-date">Введите дату, удобную для получения заказа</p>
         </label>
       <input type="text" class="delivery-form-date-field input-style" id="date-delivery" placeholder="01.04.2020">
       </div>
@@ -351,9 +351,9 @@
       <div class="delivery-form-address field-group">
         <label class="delivery-form-subtitle" for="address-delivery">
           Адрес
-          <span class="tooltip" aria-describedby="tooltip" tabindex="0"></span>
+          <button class="tooltip" aria-describedby="tooltip"></button>
           <span class="tooltip-decor"></span>
-          <p class="tooltip-text" role="tooltip">Введите название<br>улицы, дома и квартиры</p>
+          <p class="tooltip-text" role="tooltip" id="tooltip">Введите название<br>улицы, дома и квартиры</p>
         </label>
       <input type="text" class="delivery-form-address-field input-style" id="address-delivery" placeholder="ул. Большая Конюшенная, 19/8">
       </div>
