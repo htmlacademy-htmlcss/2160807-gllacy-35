@@ -504,7 +504,7 @@ width: 100%;
   font-weight: 700;
   font-size: 18px;
 }
-.popup-cart-closer{
+.popup-cart-close{
   width: 16px;
   height: 16px;
   border: 1px solid transparent;
@@ -515,13 +515,13 @@ width: 100%;
  background-position: center;
  outline: none;
 }
-.popup-cart-closer:hover{
+.popup-cart-close:hover{
   opacity: 70%;
 }
-.popup-cart-closer:active{
+.popup-cart-close:active{
   opacity: 30%;
 }
-.popup-cart-closer:focus{
+.popup-cart-close:focus{
   border-color:  #2D3440;
 }
 .popup-cart-bottom{
@@ -1125,7 +1125,7 @@ padding: 133px 40px 24px;
 }
 .input-style{
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   line-height: 20px;
   height: 48px;
   padding-left: 16px;
@@ -1150,7 +1150,7 @@ padding: 133px 40px 24px;
 }
 .red-button{
   font-size: 16px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   line-height: 20px;
   color: #FCFCFC;
   padding: 10px 32px;
@@ -1230,6 +1230,7 @@ margin-bottom: 80px;
   font-weight: 700;
   margin-bottom: 8px;
   margin-right: 4px;
+  position: relative;
 }
 .delivery-form-date-field{
  width: 117px;
@@ -1259,12 +1260,17 @@ margin-bottom: 80px;
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  position: relative;
+  position: absolute;
   margin-left: 2px;
   background-color: transparent;
   border: none;
-
+  left: 43px;
+  top: 2px;
 }
+ .tooltip{
+  left: 55px;
+  top: 4px;
+ }
 .tooltip:hover ~ .tooltip-text{
   display: block;
 }
@@ -1292,6 +1298,7 @@ margin-bottom: 80px;
   box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
   font-weight: 400;
   display: none;
+  z-index: 1;
 }
 .tooltip-text-date{
   position: absolute;
@@ -1309,6 +1316,7 @@ margin-bottom: 80px;
   top: -17px;
   left: 68px;
    min-width: 130px;
+   z-index: 1;
 }
 .tooltip-decor{
    content: " ";
@@ -1523,7 +1531,7 @@ address{
   border: 2px solid transparent;
   padding: 6px 13px;
   color: #2D3440;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   appearance: none;
@@ -1729,7 +1737,7 @@ address{
 }
 .filter-button{
   font-size: 14px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;

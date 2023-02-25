@@ -76,7 +76,6 @@
   </li>
   <li class="user-item user-item-cart">
     <button type="button" class="user-popup user-cart">
-      <span class="user-item-cart-mask"></span>
       2 товара
     </button>
     <div class="popup-cart">
@@ -93,7 +92,7 @@
           <span class="popup-cart-description">1 кг х 310 ₽</span>
           </div>
           <span class="popup-cart-price">310 ₽</span>
-          <button class="popup-cart-closer">
+          <button class="popup-cart-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </li>
@@ -108,7 +107,7 @@
           <span class="popup-cart-description">1,5 кг х 320 ₽</span>
           </div>
           <span class="popup-cart-price">480 ₽</span>
-          <button class="popup-cart-closer">
+          <button class="popup-cart-close">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </li>
@@ -242,7 +241,7 @@
   <ol class="popular-products-list">
     <li class="popular-products-item">
       <a href="#" class="img-link">
-      <img src="images/ic-raspberry.png" alt="Малинка">
+      <img src="images/ic-raspberry.png" width="168" height="168" alt="Малинка">
       </a>
      <div class="popular-products-content">
       <h3 class="popular-products-title">Малинка</h3>
@@ -250,7 +249,6 @@
       <div class="pp-price-and-cart">
         <p class="popular-products-price">310 ₽/кг</p>
         <button class="popular-products-button" type="button">
-          <span class="product-cart-mask"></span>
           <span class="visually-hidden">В карзину</span>
         </button>
      </div>
@@ -336,10 +334,10 @@
       <div class="delivery-form-date field-group">
         <label class="delivery-form-subtitle" for="date-delivery" >
           Дата
+        </label>
           <button type="button" class="tooltip-date" aria-describedby="tooltip-date"></button>
           <span class="tooltip-decor-date"></span>
-          <p class="tooltip-text-date" role="tooltip-date" id="tooltip-date">Введите дату, удобную для получения заказа</p>
-        </label>
+          <span class="tooltip-text-date" role="tooltip" id="tooltip-date">Введите дату, удобную для получения заказа</span>
       <input type="text" class="delivery-form-date-field input-style" id="date-delivery" placeholder="01.04.2020">
       </div>
       <div class="delivery-form-tel field-group">
@@ -349,10 +347,10 @@
       <div class="delivery-form-address field-group">
         <label class="delivery-form-subtitle" for="address-delivery">
           Адрес
-          <button type="button" class="tooltip" aria-describedby="tooltip"></button>
-          <span class="tooltip-decor"></span>
-          <p class="tooltip-text" role="tooltip" id="tooltip">Введите название<br>улицы, дома и квартиры</p>
         </label>
+          <button type="button" class="tooltip" aria-describedby="tooltip-address"></button>
+          <span class="tooltip-decor"></span>
+          <span class="tooltip-text" role="tooltip" id="tooltip-address">Введите название<br>улицы, дома и квартиры</span>
       <input type="text" class="delivery-form-address-field input-style" id="address-delivery" placeholder="ул. Большая Конюшенная, 19/8">
       </div>
        <button class="delivery-submit  red-button" type="submit">Отправить</button>
@@ -416,7 +414,7 @@
      <form class="modal-window-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="input-style" type="text" id="modal-name" placeholder="Имя и фамилия" required>
         <input class="input-style" type="email" id="modal-mail" placeholder="email@example.com" required>
-        <textarea class="input-style imput-area" type="text" id="modal-product" placeholder="В свободной форме" required></textarea>
+        <textarea class="input-style imput-area" id="modal-product" placeholder="В свободной форме" required></textarea>
         <button class="modal-submit-button red-button" type="submit">Отправить</button>
      </form>
     </div>
