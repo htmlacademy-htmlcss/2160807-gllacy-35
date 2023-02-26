@@ -32,8 +32,14 @@ body{
  flex-direction: column;
  min-height: 100%;
  align-items: center;
- width: 1170px;
+ min-width: 1170px;
  margin: 0 auto;
+}
+.main-index{
+  flex-grow: 1;
+}
+.catalog-main{
+  flex-grow: 1;
 }
 .visually-hidden{
   position: absolute;
@@ -91,6 +97,9 @@ body{
   border-radius: 30px;
   border: 2px solid transparent;
   outline: none;
+}
+.about-company{
+  margin-left: -5px;
 }
 .navigation-link:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -234,6 +243,7 @@ body{
   display: flex;
   align-items: center;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .user-item{
   margin-right: 16px;
@@ -741,7 +751,7 @@ display: none;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 238px;
+  top: 44.2%;
   left: 543px;
   outline: none;
 }
@@ -1263,7 +1273,7 @@ margin-bottom: 80px;
   background-color: #FCFCFC;
   box-sizing: border-box;
   padding: 40px;
-  border-radius: 16px;
+  border-radius: 6px;
 }
 .delivery-submit{
   margin: 0 auto;
