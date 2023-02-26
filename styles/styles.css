@@ -1006,7 +1006,7 @@ padding: 133px 40px 24px;
   justify-content: center;
   align-items: center;
   position: relative;
-
+  outline: none;
 }
 .popular-products-button::before,
 .catalog-button::before{
@@ -1116,6 +1116,17 @@ padding: 133px 40px 24px;
   padding: 32px;
   box-sizing: border-box;
   border-radius: 16px;
+  outline: none;
+  border: 2px solid transparent;
+}
+.new-in-blog-mailing:hover{
+  opacity: 60%;
+}
+.new-in-blog-mailing:active{
+  opacity: 30%;
+}
+.new-in-blog-mailing:focus{
+ border-color: #2D3440;
 }
 .new-in-blog-mailing p{
   font-weight: 700;
@@ -1159,6 +1170,7 @@ padding: 133px 40px 24px;
   box-sizing: border-box;
   border-radius: 4px;
   color: #2D3440;
+  outline: none;
 }
 
 .input-style:hover{
@@ -1188,6 +1200,7 @@ padding: 133px 40px 24px;
   text-decoration: none;
   height: 44px;
   font-weight: 700;
+  outline: none;
 }
 .red-button:hover{
   color: #2D3440;
@@ -1428,6 +1441,8 @@ address{
   line-height: 24px;
   text-decoration: none;
   color: #2D3440;
+  outline: none;
+  border: 2px solid transparent;
 }
 .contacts-tel:hover{
   opacity: 60%;
@@ -1475,11 +1490,18 @@ address{
   top: 21px;
   left: 0;
 }
+.breadcrumbs-link{
+  border: 1px solid transparent;
+  outline: none;
+}
 .breadcrumbs-link:hover{
   opacity: 60%;
 }
 .breadcrumbs-link:active{
   opacity: 30%;
+}
+.breadcrumbs-link:focus{
+  border-color: #2D3440;
 }
 .breadcrumbs-item:not(:last-child):before{
   content: " ";
@@ -1771,7 +1793,7 @@ address{
   -webkit-mask-image: url("../images/filler-checked.svg");
   background-color: #FCFCFC;
 }
-.filler-input:checked:focus ~ .filler-label::before{
+.filler-input:checked:disabled ~ .filler-label::before{
   mask-image: url("../images/filler-checked.svg");
   -webkit-mask-image: url("../images/filler-checked.svg");
   background-color: #2D3440;
