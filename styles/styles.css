@@ -93,13 +93,10 @@ body{
   width: 545px;
 }
 .navigation-link{
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 30px;
   border: 2px solid transparent;
   outline: none;
-}
-.about-company{
-  margin-left: -5px;
 }
 .navigation-link:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -1117,7 +1114,7 @@ padding: 133px 40px 24px;
   box-sizing: border-box;
   border-radius: 16px;
   outline: none;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .new-in-blog-mailing:hover{
   opacity: 60%;
@@ -1473,7 +1470,7 @@ address{
   margin-left: 1px;
 }
 .breadcrumbs-item{
-  margin-right: 29px;
+  margin-right: 26px;
   position: relative;
 }
 .breadcrumbs-item a{
